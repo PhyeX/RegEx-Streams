@@ -1,8 +1,8 @@
 # RegEx
   
+  
+  
   RegEx solutions of Hackerrank questions.
-
-    <h2>  Solutions Of Questions </h2>
   
        3."\d{2}\D\d{2}\D\d{4}"
        4."\\S{2}\\s\\S{2}\\s\\S{2}"   
@@ -13,4 +13,6 @@
        9."^[a-z][1-9][^a-z][^A-Z][A-Z].*"
        10."^[a-zA-z246810]{40}[13579\\W]{5}$" 
 
-I have started to solve questions from 3.You can find the the question and the descriptions in repository or you can go hackerrank and try to solve!
+I have started to solve questions from 3.
+You can find the the question and the descriptions in repository or you can go hackerrank and try to solve!
+I will add also the others solutions as soon as possible.
