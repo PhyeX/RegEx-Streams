@@ -17,6 +17,11 @@
        13."^\\d+[A-Z]+[a-z]+$"
        14."^[a-zA-Z]*s$"
        15."\\b[aeiouAEIOU][a-zA-Z]*\\b"
+       16."(ok){3,}"
+       17."^(Mr|Mrs|Ms|Dr|Er)\\.[a-zA-Z]+$"
+       18."([a-z]\\w\\s\\W\\d\\D[A-Z][a-zA-Z][aeiouAEIOU]\\S)\\1"
+       19."^\\d{2}(-?)\\d{2}\\1\\d{2}\\1\\d{2}$"
+       20."^tac(tac(tic)?)*$"
        
 
 I have started to solve questions from 3.
