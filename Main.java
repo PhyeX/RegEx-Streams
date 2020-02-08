@@ -235,7 +235,7 @@ public class Main {
 
      // $ Expression
      // The $ boundary matcher an occurrence of a character/character class/group at the end of a line.
-    */
+    
     // Example 15
     // Task: Your task is write a regex which will match word starting with vowel(a,e,i,o,A,E,I,O or U9
     // The matched word can be of any length. The matcged word should consist of letters(lowercase and uppercase both)
@@ -251,7 +251,72 @@ public class Main {
     // * Before the first character in the string,if the first character is a word character.
     // * Between two characters in the string,where one is a word character and the other is not a word character.
     // * After the last character in the string,if the last character is a word character.   
-        
+         
+        // Example 16
+    // Task: You have a test String S.
+    // Task: Your task is to write a regex which will match S with the following condition:
+    //  S should have 3 or more consecutive repetitions of ok.
 
+     String string = "okokok! cya";
+
+        Answer == "(ok){3,}";
+    // The () expression.
+    // Parenthesis () around a regular expression can group that part of regex together.This allows us to apply different quantifiers to that group.
+    // These parenthesis also create a numbered capturing.It stores the part of string matched by the part of regex inside parentheses.
+
+
+    //Example 17
+    //Task:Given a test string,s,write a RegEx that matches s under the following conditions:
+    // s must start with Mr.,Mrs.,Ms.,Dr. or Er..
+    // The rest of the string must contain only one or more English alphabetic letters(upper and lowercase).
+
+        String string = "Mr.DOSHI";
+
+        Answer == "^(Mr|Mrs|Ms|Dr|Er)\\.[a-zA-Z]+$";
+    // Alternations,denoted by the | character,match a single item out of several possible items separated by the vertical bar.When used inside a character class,
+    // It will match characters;when used inside a group,it will match entire expressions.We must use parentheses to limit use of alternations.
+
+        //Example 18
+    //  Task:You have a test string S.
+    //  Your task is to write a regex that will match  with the following conditions:
+     //  S must be of length: 20
+     // 1.character: lowercase letter.
+     // 2.character: word character.
+     // 3.character: whitespace character.
+     // 4.character: non word character.
+     // 5.character: digit.
+     // 6.character: non digit.
+     // 7.character: uppercase letter.
+     // 8.character: letter (either lowercase or uppercase).
+     // 9.character: vowel (a, e, i , o , u, A, E, I, O or U).
+     // 10.character: non whitespace character.
+     // The other 10 character also should same.
+
+        String string = "ab #1?AZa$ab #1?AZa$";
+
+        Answer == "([a-z]\\w\\s\\W\\d\\D[A-Z][a-zA-Z][aeiouAEIOU]\\S)\\1";
+    // This tool (\1 references the first capturing group) matches the same text as previously matched by the capturing group.
+
+    // Example 19
+    // You have a task string S.
+    // Your task is to write a regex which will match S,with following condition(s):
+    //  S consists of 8 digits.
+    //  S may have "-"separator such that string S gets divided in 4 parts,with each part having exactly two digits.
+       String string = "12345678";
+       String string = "12-34-56-87";
+       Answer == "^\\d{2}(-?)\\d{2}\\1\\d{2}\\1\\d{2}$";
+       // Here, (?) is optional and matches nothing
+
+    // Example 20
+    // You have a test string S.
+    // S consist of "tic" or "tac";
+    // "tic" should not be immeditate neighbour of itself.
+    // The first "tic" must occur only when "tac" has appeared at least twice before.
+
+     String string = "tactactic";
+     String string2= "tactactictactic";
+
+     Answer == "^tac(tac(tic)?)*$";   
+    
     }
 }
