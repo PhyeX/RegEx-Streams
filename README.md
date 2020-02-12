@@ -2,7 +2,7 @@
   
   ![regEx](https://user-images.githubusercontent.com/45934056/73858292-378cac80-4849-11ea-9e45-ee7b8ec17abf.png)
   
-  RegEx solutions of Hackerrank questions.
+  # RegEx solutions of Hackerrank questions.
   
        3."\d{2}\D\d{2}\D\d{4}"
        4."\\S{2}\\s\\S{2}\\s\\S{2}"   
@@ -22,8 +22,9 @@
        18."([a-z]\\w\\s\\W\\d\\D[A-Z][a-zA-Z][aeiouAEIOU]\\S)\\1"
        19."^\\d{2}(-?)\\d{2}\\1\\d{2}\\1\\d{2}$"
        20."^tac(tac(tic)?)*$"
-       
+       21."o(?=oo)"
+       22."(.)(?!\\1)"
+       23."(?<=[13579])\\d)"
+       24."(?<![aeiuoAEIOU])."
 
-I have started to solve questions from 3.
-You can find the the question and the descriptions in repository or you can go hackerrank and try to solve!
-I will add also the others solutions as soon as possible.
+### You can find the the question and the descriptions in repository or you can go hackerrank and try to solve!
