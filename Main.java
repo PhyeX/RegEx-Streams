@@ -316,7 +316,64 @@ public class Main {
      String string = "tactactic";
      String string2= "tactactictactic";
 
-     Answer == "^tac(tac(tic)?)*$";   
-    
+     Answer == "^tac(tac(tic)?)*$";  
+        
+     // Example 21
+    // Task:
+    // Write a regex that can match all occurrences of o followed immediately by oo in S.
+     String string = "gooooo!";
+     Answer == "o(?=oo)";
+    // The positive lookahead (?=) asserts regex_1 to be immediately followed by regex_2.
+    // The lookahead is excluded from the match. It does not return matches of regex_2.
+    // The lookahead only asserts whether a match is possible or not.
+
+    // Example 22
+    // Task: You have a test String S.
+    // Write a regex which can match all characters which are not immediately followed by that same character.
+    // If S = goooo, then regex should match g"ooo"o.Because the first g is not follwed by g and the o is not followed by o.
+       String string = "gooooo";
+       Answer == ""(.)(?!\\1)"
+    // The negative lookahead (?!) asserts regex_1 not to be immediately followed by regex_2.Lookahead is
+    // excluded from the match(do not consume matches of regex_2),but only assert whether a match is possible or not.
+
+    //Example 23
+    // Task: You have a test String S.
+    // Write a regex which can match all the occurences of digit which are immediately preceded by odd digit.
+      String string = "123Go!";
+      Answer == "(?<=[13579])\\d)"
+
+    // (?>=regex_2)regex_1
+    // The positive lookbehind (?<=) asserts regex_1 to be immediately preceded by regex_2.Lookbehind is excluded from
+    // the match(do not consume matches of regex_2)
+
+    //Example 24
+    // Task: You have a test String S.
+    // Write a regex which can match all the occurences of characters which are not immediatly preceded by vowels(a,e,i,u,o,A,E,I,O,U).
+
+      String string ="1o1s1
+      Answer == "(?<![aeiuoAEIOU]).";
+
+    // The (?<!regex_2)regex_1
+    // Te negative lookbehind(?<!)asserts regex_1 not to be immediately preceded by regex_2.Lookbehind is excluded from
+    // the match ( dot not comsume matches of regex_2),but only assert whether a match is possible or not.
+
+
+    // From now on I will use in programs so I will write a litte intro then show the solution.
+    // Example 25
+    // Task:We are trying to hack together a smart programming IDE. Help us build a feature which auto-detects the programming language, given the source code.
+    // There are only three languages which we are interested in "auto-detecting": Java, C and Python.
+        Solution -->   Scanner scan = new Scanner(System.in);
+                                String string = "";
+                                while(scan.hasNext()){
+                                    string += scan.nextLine() + "\n";
+                                }
+                                    if(string.contains("java."))
+                                        System.out.println("Java");
+                                            else if(string.contains("#include"))
+                                                 System.out.println("C");
+                                                    else
+                                                        System.out.println("Python");
+        
+    //Example 26
     }
 }
