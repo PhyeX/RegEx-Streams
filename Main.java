@@ -359,7 +359,8 @@ public class Main {
 
 
     // From now on I will use in programs so I will write a litte intro then show the solution.
-    // Example 25
+
+    // Example 25   *** Building a Smart IDE: Programming Language Detection ***
     // Task:We are trying to hack together a smart programming IDE. Help us build a feature which auto-detects the programming language, given the source code.
     // There are only three languages which we are interested in "auto-detecting": Java, C and Python.
         Solution -->   Scanner scan = new Scanner(System.in);
