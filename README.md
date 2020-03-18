@@ -2,7 +2,7 @@
   
   ![regEx](https://user-images.githubusercontent.com/45934056/73858292-378cac80-4849-11ea-9e45-ee7b8ec17abf.png)
   
-  # RegEx solutions of Hackerrank questions.
+  # RegEx solutions of some Hackerrank questions.
   
        1."\d{2}\D\d{2}\D\d{4}"
        2."\\S{2}\\s\\S{2}\\s\\S{2}"   
@@ -27,4 +27,4 @@
        21."(?<=[13579])\\d)"
        22."(?<![aeiuoAEIOU])."
 
-### You can find the the question and the descriptions in repository or you can go hackerrank and try to solve!
+
