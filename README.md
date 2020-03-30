@@ -2,7 +2,8 @@
   
   ![regEx](https://user-images.githubusercontent.com/45934056/73858292-378cac80-4849-11ea-9e45-ee7b8ec17abf.png)
   
-  A regular expression, regex or regexp[1] (sometimes called a rational expression)[2][3] is a sequence of characters that define a search pattern. Usually such patterns are used by string searching algorithms for "find" or "find and replace" operations on strings, or for input validation. It is a technique developed in theoretical computer science and formal language theory. -Wikipedia
+  <b>A regular expression, regex or regexp[1] (sometimes called a rational expression)[2][3] is a sequence of characters that define a search pattern. Usually such patterns are used by string searching algorithms for "find" or "find and replace" operations on strings, or for input validation. It is a technique developed in theoretical computer science and formal language theory.</b>
+  -Wikipedia
   
   # RegEx solutions of Hackerrank questions.
   
