@@ -29,5 +29,25 @@
        20."(.)(?!\\1)"
        21."(?<=[13579])\\d)"
        22."(?<![aeiuoAEIOU])."
+       
+       
+   # Some Stream functions which have I noted in Streams folder.
+   
+        1.filter()
+        2.collect()
+        3.sorted()
+        4.allMatch()
+        5.anyMatch()
+        6.noneMatch()
+        7.max()
+        8.min()
+        9.map()
+        10.count()
+        11.range()
+        12.skip()
+        13.sum()
+        14.findFirst()
+        15.average()
+        
 
 
