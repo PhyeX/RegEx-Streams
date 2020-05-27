@@ -105,6 +105,14 @@ public class Main {
                 .sum());
         System.out.println();
 
+        // 4. Integer Stream
+        // 1 to 10 makes a consecutive a array and convert int array.
+
+        IntStream.rangeClosed(1, 10).toArray();  // makes a array between the datas int[].
+
+
+        IntStream.range(-n, 0).map(Math::abs).toArray();   // makes a reverse array between the datas [].
+
         // 4.Stream.of, sorted and findFirst
         Stream.of("Ava","Aneri","Alberto")
                 .sorted()
@@ -162,6 +170,17 @@ public class Main {
                 .filter(x -> Integer.parseInt(x[1]) > 15 )
                 .forEach(x -> System.out.println(x[0]+ " "+ x[1] + " " + x[2]));
         rows2.close();
+        // The function finds unique characters in string then sort them.
+      /*  public static String longest (String s1, String s2) {
+
+
+            return ( s1 + s2 ).chars()
+                    .distinct()
+                    .sorted()
+                    .mapToObj(c -> String.valueOf((char)c))
+                    .collect(Collectors.joining());
+        } */
+
 
     }
 
